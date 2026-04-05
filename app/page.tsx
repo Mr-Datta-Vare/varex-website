@@ -60,9 +60,7 @@ export default function Home() {
             <a href="/services">Services</a>
             <a href="/contact">Contact</a>
           </div>
-          
         )}
-        
 
       </nav>
 
@@ -184,70 +182,53 @@ export default function Home() {
 
       </section>
 
-      
       {/* Footer */}
-<footer className="bg-gradient-to-r from-[#020617] to-[#0f172a] text-white px-10 py-16">
+        <footer className="bg-gradient-to-r from-[#020617] to-[#0f172a] text-white px-10 py-16">
 
-  <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
 
-    {/* Left - Company Info */}
-    <div>
-      <h2 className="text-2xl font-bold text-blue-400 mb-4">
-        VareX Tech
-      </h2>
+            <div>
+              <h2 className="text-2xl font-bold text-blue-400 mb-4">
+                VareX Tech
+              </h2>
 
-      <p className="text-gray-400 mb-6 leading-relaxed">
-        VareX Tech Solutions is a trusted technology partner providing Web,
-        Android, Cloud, RPA, and QA services to help businesses grow and scale
-        globally.
-      </p>
+              <p className="text-gray-400 mb-6 leading-relaxed">
+                VareX Tech Solutions is a trusted technology partner providing Web,
+                Android, Cloud, RPA, and QA services.
+              </p>
 
-      <p className="text-gray-400">
-        📧 contact@varextech.com
-      </p>
-    </div>
+              <p className="text-gray-400">
+                📧 contact@varextech.com
+              </p>
+            </div>
 
-    {/* Middle - Useful Links */}
-    <div>
-      <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
+              <ul className="space-y-3 text-gray-400">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
 
-      <ul className="space-y-3 text-gray-400">
-        <li><a href="/" className="hover:text-blue-400">Home</a></li>
-        <li><a href="/services" className="hover:text-blue-400">Services</a></li>
-        <li><a href="/contact" className="hover:text-blue-400">Contact</a></li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+              <ul className="space-y-3 text-gray-400">
+                <li>Web Development</li>
+                <li>Android Development</li>
+                <li>Cloud Solutions</li>
+                <li>RPA Services</li>
+                <li>QA & Testing</li>
+              </ul>
+            </div>
 
-    {/* Right - Services */}
-    <div>
-      <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+          </div>
 
-      <ul className="space-y-3 text-gray-400">
-        <li>Web Development</li>
-        <li>Android Development</li>
-        <li>Cloud Solutions</li>
-        <li>RPA Services</li>
-        <li>QA & Testing</li>
-      </ul>
-    </div>
+          <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+            © 2026 VareX Tech Solutions. All rights reserved.
+          </div>
 
-  </div>
-
-  {/* Bottom */}
-  <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-    © 2026 VareX Tech Solutions. All rights reserved.
-  </div>
-
-</footer>
-
-{/* Floating WhatsApp */}
-      <a
-        href="https://wa.me/919511954660"
-        target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 px-5 py-3 rounded-full shadow-lg hover:bg-green-600"
-      >
-        WhatsApp
-      </a>
+        </footer>
 
     </div>
   );
