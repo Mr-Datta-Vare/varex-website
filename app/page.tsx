@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -34,10 +36,19 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/40 border-b border-gray-800 px-6 py-4">
 
         <div className="flex justify-between items-center">
+          
 
-          <a href="/" className="text-xl font-bold text-blue-400">
-            VareX Tech Solutions
-          </a>
+          <Link href="/" className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="logo"
+    width={35}
+    height={35}
+  />
+  <span className="text-xl font-bold text-blue-400">
+    VareX Tech Solutions
+  </span>
+</Link>
 
           <div className="hidden md:flex gap-6">
             <a href="/" className="hover:text-blue-400">Home</a>

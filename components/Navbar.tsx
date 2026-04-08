@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,9 +11,17 @@ export default function Navbar() {
 
       <div className="flex justify-between items-center">
 
-        <a href="/" className="text-xl font-bold text-blue-400">
-          VareX Tech Solutions
-        </a>
+        <Link href="/" className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="logo"
+    width={40}
+    height={40}
+  />
+  <span className="text-xl font-bold text-blue-400">
+    VareX Tech Solutions
+  </span>
+</Link>
 
         {/* Desktop */}
         <div className="hidden md:flex gap-6">
